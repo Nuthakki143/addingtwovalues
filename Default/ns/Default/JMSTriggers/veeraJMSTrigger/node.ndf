@@ -28,9 +28,9 @@
     <value name="resolutionHistoryTTL">7200000</value>
     <value name="uniqueId">0Yyoz5lgE6V+8xIA4OoAzeQNKLg=</value>
     <value name="executeUser">Administrator</value>
-    <value name="aliasName">DEFAULT_IS_JMS_CONNECTION</value>
+    <value name="aliasName">Queue_Gullipalli</value>
     <number name="jmsTriggerType" type="Integer">0</number>
-    <Boolean name="enabled">true</Boolean>
+    <Boolean name="enabled">false</Boolean>
     <value name="prefetchSize">10</value>
     <value name="connectionCount">1</value>
     <value name="inactiveWaitTime">1500</value>
@@ -46,14 +46,17 @@
         <value name="serviceName">Default.Malik:stringManuplate</value>
         <value name="filter"></value>
       </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="ruleName">Rule2</value>
+        <null name="serviceName"/>
+        <value name="filter"></value>
+      </record>
     </array>
     <array name="destinations" type="record" depth="1">
       <record javaclass="com.wm.util.Values">
         <value name="destination">veera</value>
         <null name="messageSelector"/>
-        <number name="destinationType" type="Integer">1</number>
-        <null name="durableSubscriberName"/>
-        <Boolean name="durableSubscriberNoLocal">false</Boolean>
+        <number name="destinationType" type="Integer">0</number>
       </record>
     </array>
   </record>
