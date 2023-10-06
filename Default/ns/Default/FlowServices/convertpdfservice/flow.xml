@@ -1,0 +1,1703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE TIMEOUT="" SERVICE="Default.Adapters:selectBollywood" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">selectBollywoodInput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">selectBollywoodInput</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">record</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">overrideCredentials</value>
+            <value name="field_type">record</value>
+            <value name="field_dim">0</value>
+            <value name="nillable">true</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">false</value>
+            <array name="rec_fields" type="record" depth="1">
+            </array>
+            <value name="modifiable">true</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">unknown</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">SERIAL_NO</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <value name="nillable">true</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">false</value>
+          </record>
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">$connectionName</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">false</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">SERIAL_NO</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/SERIAL_NO;1;0" TO="/selectBollywoodInput;2;0/SERIAL_NO;1;0">
+</MAPCOPY>
+</MAP>
+</INVOKE>
+
+<MAP TIMEOUT="" MODE="STANDALONE" DISABLED="true">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">selectBollywoodInput</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">SERIAL_NO</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">selectBollywoodOutput</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">string</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="true" GLOBALVARIABLES="false" FIELD="/string(0);1;0" DISABLED="true">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Bollywood Data&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;SERIAL_NO %selectBollywoodOutput/results[0]/SERIAL_NO%&lt;/p&gt;
+&lt;p&gt;ACTOR_NAME %selectBollywoodOutput/results[0]/ACTOR_NAME%&lt;/p&gt;
+&lt;p&gt;MOVIE_NAME%selectBollywoodOutput/results[0]/MOVIE_NAME%&lt;/p&gt;
+CITY%selectBollywoodOutput/results[0]/CITY%&lt;/p&gt;
+&lt;p&gt;REGISTRATION_NO %selectBollywoodOutput/results[0]/REGISTRATION_NO%&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">string</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">selectBollywoodInput</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">SERIAL_NO</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">selectBollywoodOutput</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">string</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/string;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;style&gt;
+
+
+  		/* Styling for the left corner "AVIS Fleet Services" */
+
+        .avis {
+
+            color: rgb(190,0,0);
+
+            font-weight: bold;
+
+  			font-size: 30px;
+
+            font-family:verdana;
+
+            font-style:italic;
+
+        }
+
+ 
+
+        .fleet-services {
+
+            color: rgb(180,180,180); /* Ash color */
+
+  			font-size: 22px;
+
+            font-family:verdana;
+
+            font-style:italic;
+
+        }
+
+ 
+
+ 
+
+        /* Styling for the right corner "AVIS | iLEASE" */
+
+        .right-corner {
+
+            font-size: 25px;
+
+            background-color: rgb(190,0,0);
+
+            color: white;
+
+            font-weight: bold;
+
+            font-family:verdana;
+
+            padding: 5px;
+
+        }
+
+ 
+
+ 
+
+        /* Styling for the line under "QUOTATION REQUEST FORM - iLease" */
+
+        .iLease{
+
+        	font-family:verdana;
+
+            font-style:italic;
+
+            }
+
+
+        .underline {
+
+            text-align: left;
+
+            margin-top: 10px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+ 
+
+        /* Styling for the form labels */
+
+        .underlined {
+
+            margin-right: 10px;
+
+            font-weight: normal;
+
+
+        }
+
+ 
+
+		 /* Styling for the big, dark, bold line */
+
+        .big-line {
+
+            border-bottom: 5px solid black;
+
+        }
+
+
+  		 /* Styling for "Compulsory Value-Added Products" */
+
+        .compulsory-products {
+
+            font-weight: bold;
+
+            margin-top:15px;
+
+            margin-bottom:10px;
+
+            font-size:14px;
+
+            font-family:verdana;
+
+            font-style:italic;
+
+        }
+
+ 
+
+ 
+
+        /* Styling for "Vehicle Details (2 selections per quote request)" */
+
+        .vehicle-details {
+
+            text-decoration: underline;
+
+            font-weight: bold;
+
+            margin-top: 10px;
+
+            margin-bottom: 10px;
+
+        }
+
+ 
+
+ 
+
+        /* Styling for the quote details */
+
+        .quote-details {
+
+            font-size: 18px;
+
+            color: rgb(180,180,180);
+
+
+        }
+
+
+ 
+
+        /* Styling for the M &amp; M Code section */
+
+        .mm-code-label {
+
+            margin-top: 10px;
+
+            font-weight: bold;
+
+        }
+
+
+ 
+
+        /* Styling for Vehicle Make / Range and Model section */
+
+        .vehicle-info {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            margin-top: 20px;
+
+        }
+
+ 
+
+ 
+
+        .vehicle-label {
+
+            color: #808080; /* Ash color */
+
+        }
+
+ 
+
+ 
+
+        .vehicle-line {
+
+            width: 20cm;
+
+        }
+
+ 
+
+ 
+
+        /* Styling for Optional Accessories section */
+
+        .optional-accessories {
+
+            margin-top: 20px;
+
+        }
+
+ 
+
+ 
+
+        .optional-label {
+
+            color: black;
+
+        }
+
+ 
+
+ 
+
+        .optional-line {
+
+            width: 20cm;
+
+        }
+
+ 
+
+ 
+
+        /* Styling for other sections */
+
+        .other-section {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            margin-top: 20px;
+
+        }
+
+ 
+
+ 
+
+        .other-label {
+
+            color: black;
+
+        }
+
+ 
+
+ 
+
+        .other-line {
+
+            width: 20cm;
+
+        }
+
+ 
+
+ 
+
+        /* Styling for the bold, dark, bold line */
+
+        .bold-dark-line {
+
+            border-bottom: 5px solid black;
+
+        }
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body style="padding: 40px;"&gt;
+
+ 
+
+&lt;div style="display: flex"&gt;
+
+  	&lt;div style="padding-top: 20px;"&gt;
+
+		&lt;p class="left-corner" style="background-color: rgb(240,240,240);"&gt;&lt;span class="avis"&gt;AVIS&lt;/span&gt;
+
+  		&lt;span class="fleet-services"&gt;Fleet Services&lt;/span&gt;&lt;/p&gt;
+
+	&lt;/div&gt;
+
+ 
+
+    &lt;div style="margin-left: auto;"&gt;
+
+        &lt;p class="right-corner"&gt;AVIS | &lt;span style="font-size:13px; font-weight:normal;"&gt;iLEASE&lt;/span&gt;&lt;/p&gt;
+
+	&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;div class="underline"&gt;
+
+	&lt;h3&gt;&lt;u&gt;QUOTATION REQUEST FORM&lt;/u&gt; - &lt;u&gt;iLease&lt;/u&gt;&lt;/h3&gt;
+
+&lt;/div&gt;
+
+ 
+
+&lt;div&gt;
+
+    &lt;h3 class="iLease"&gt;Customer Name&lt;u class="underlined" style="margin-left:80px;"&gt;%Customer Name%&lt;/u&gt;&lt;/h3&gt;
+
+    &lt;h3 class="iLease"&gt;ID Number&lt;u class="underlined" style="margin-left:130px;"&gt;%Customer Name%&lt;/u&gt;&lt;/h3&gt;
+
+    &lt;h3 class="iLease"&gt;Contact number&lt;u class="underlined" style="margin-left:80px;"&gt;%Customer Name%&lt;/u&gt;&lt;/h3&gt;
+
+    &lt;h3 class="iLease"&gt;E-mail&lt;u class="underlined" style="margin-left:180px;"&gt;%Customer Name%&lt;/u&gt;&lt;/h3&gt;
+
+&lt;/div&gt;
+
+
+&lt;div class="big-line"&gt;&lt;/div&gt;
+
+ 
+
+&lt;div class="compulsory-products"&gt;
+
+        Compulsory Value-Added Products
+
+&lt;/div&gt;
+
+ 
+
+&lt;div style="display: flex"&gt;
+
+    &lt;div&gt;
+
+        &lt;h4 class="underlined"&gt;AA Corporate&lt;span style="margin-left:40px;"&gt;%AA Corporate%&lt;/span&gt;&lt;/h4&gt;
+
+        &lt;h4 class="underlined"&gt;iLease Insurance&lt;span style="margin-left:20px;"&gt;%iLease Insurance%&lt;/span&gt;&lt;/h4&gt;
+
+        &lt;h4 class="underlined"&gt;License Renewal&lt;span style="margin-left:20px;"&gt;%License Renewal%&lt;/span&gt;&lt;/h4&gt;
+
+    &lt;/div&gt;
+
+    &lt;div&gt;
+
+        &lt;h4 class="underlined"&gt;Telematics&lt;span style="margin-left:210px;"&gt;%AA Corporate%&lt;/span&gt;&lt;/h4&gt;
+
+        &lt;h4 class="underlined"&gt;Driver management&lt;span style="margin-left:150px;"&gt;%iLease Insurance%&lt;/span&gt;&lt;/h4&gt;
+
+        &lt;h4 class="underlined"&gt;Traffic Fines Management per infringement&lt;span style="margin-left:10px;"&gt;%License Renewal%&lt;/span&gt;&lt;/h4&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+ 
+
+&lt;div class="big-line"&gt;&lt;/div&gt;
+
+ 
+
+&lt;div class="vehicle-details"&gt;
+
+        Vehicle Details (2 selections per quote request)
+
+&lt;/div&gt;
+
+ 
+
+&lt;div style="display: flex"&gt;
+
+	&lt;div&gt;
+
+    	&lt;h4 class="quote-details"&gt;Avis Quote #&lt;br&gt; (office use)&lt;u&gt;%office use%&lt;/u&gt;&lt;/h4&gt;
+
+        &lt;h4 class="mm-code-label"&gt;*M &amp; M Code&lt;/h4&gt;
+
+        &lt;h4 class="vehicle-label"&gt;Vehicle Make / Range:&lt;/h4&gt;
+
+        &lt;h4 class="vehicle-label"&gt;Model:&lt;/h4&gt;
+
+        &lt;h4 class="optional-label"&gt;Optional Accessories&lt;/h4&gt;
+
+        &lt;h4 class="other-label"&gt;AverageMonthlyKilometers required&lt;/h4&gt;
+
+    &lt;/div&gt;
+
+    &lt;div style="margin-left: auto;"&gt;
+
+    	&lt;h4 class="quote-details"&gt;Avis Quote #&lt;br&gt; (office use)&lt;u&gt;%office use%&lt;/u&gt;&lt;/h4&gt;
+
+        &lt;h4 class="mm-code-label"&gt;*M &amp; M Code&lt;/h4&gt;
+
+        &lt;h4 class="vehicle-label"&gt;Vehicle Make / Range:&lt;/h4&gt;
+
+        &lt;h4 class="vehicle-label"&gt;Model:&lt;/h4&gt;
+
+        &lt;h4 class="optional-label"&gt;Optional Accessories&lt;/h4&gt;
+
+        &lt;h4 class="other-label"&gt;AverageMonthlyKilometers required&lt;/h4&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+ 
+
+ 
+
+    &lt;div class="other-section"&gt;
+
+&lt;span class="other-label"&gt;Required Delivery Date &amp;Area&lt;/span&gt;
+
+&lt;span class="other-line"&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+
+ 
+
+ 
+
+    &lt;div class="other-section"&gt;
+
+&lt;span class="other-label"&gt;Special Request&lt;/span&gt;
+
+&lt;span class="other-line"&gt;&lt;/span&gt;
+
+&lt;span class="other-label"&gt;Special Request&lt;/span&gt;
+
+&lt;span class="other-line"&gt;&lt;/span&gt;
+
+&lt;/div&gt;
+
+ 
+
+ 
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+[Yesterday 16:57] Aruna sri Kandipalli
+
+{
+
+    "EmailInputs": {
+
+        "to": "a.kandipalli@teknomitellc.com",
+
+        "subject": "IFM: SUSPECT LOW CONSUMPTION",
+
+        "from": "NoReply.AvisiLease@zeda.co.za",
+
+        "Template": "SUSPECTLOWCONSUMPTION",
+
+        "TemplateInputs": [
+
+            [
+
+                {
+
+                    "INP1":"Teknomite",
+
+                    "INP2":"HYD",
+
+                    "INP3":"23-08-23",
+
+                    "INP4":"QWER",
+
+                    "INP5":"RAVI",
+
+                    "INP6":"24-06-23",
+
+                    "INP7":"12:46",
+
+                    "INP8":"QWERTY",
+
+                    "INP9":"WERTY",
+
+                    "INP10":"ERTY",
+
+                    "INP11":"BEERAMGUDA",
+
+                    "INP12":"10",
+
+                    "INP13":"1000",
+
+                    "INP14":"100"
+
+                }
+
+            ]
+
+        ]
+
+    }
+
+}
+
+[Yesterday 17:01] Manikanta Gullipalli
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;style&gt;
+
+
+  		/* Styling for the left corner "AVIS Fleet Services" */
+
+        .avis {
+
+            color: rgb(190,0,0);
+
+            font-weight: bold;
+
+  			font-size: 30px;
+
+            font-family:verdana;
+
+            font-style:italic;
+
+        }
+
+ 
+
+        .fleet-services {
+
+            color: rgb(180,180,180); /* Ash color */
+
+  			font-size: 22px;
+
+            font-family:verdana;
+
+            font-style:italic;
+
+        }
+
+ 
+
+ 
+
+        /* Styling for the right corner "AVIS | iLEASE" */
+
+        .right-corner {
+
+            font-size: 25px;
+
+            background-color: rgb(190,0,0);
+
+            color: white;
+
+            font-weight: bold;
+
+            font-family:verdana;
+
+            padding: 5px;
+
+        }
+
+ 
+
+ 
+
+        /* Styling for the line under "QUOTATION REQUEST FORM - iLease" */
+
+        .iLease{
+
+        	font-family:verdana;
+
+            font-style:italic;
+
+            }
+
+
+        .underline {
+
+            text-align: left;
+
+            margin-top: 10px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+ 
+
+        /* Styling for the form labels */
+
+        .underlined {
+
+            margin-right: 10px;
+
+            font-weight: normal;
+
+
+        }
+
+ 
+
+		 /* Styling for the big, dark, bold line */
+
+        .big-line {
+
+            border-bottom: 5px solid black;
+
+        }
+
+
+  		 /* Styling for "Compulsory Value-Added Products" */
+
+        .compulsory-products {
+
+            font-weight: bold;
+
+            margin-top:15px;
+
+            margin-bottom:10px;
+
+            font-size:14px;
+
+            font-family:verdana;
+
+            font-style:italic;
+
+        }
+
+ 
+
+ 
+
+        /* Styling for "Vehicle Details (2 selections per quote request)" */
+
+        .vehicle-details {
+
+            text-decoration: underline;
+
+            font-weight: bold;
+
+            margin-top: 10px;
+
+            margin-bottom: 10px;
+
+        }
+
+ 
+
+ 
+
+        /* Styling for the quote details */
+
+        .quote-details {
+
+            font-size: 15px;
+
+            color: rgb(180,180,180);
+
+            margin-bottom: 10px;
+
+        }
+
+
+ 
+
+        /* Styling for the M &amp; M Code section */
+
+        .mm-code-label {
+
+            margin-bottom: 10px;
+
+            font-weight: normal;
+
+        }
+
+
+
+        .vehicleUnderline {
+
+        	margin-left: 30px;
+
+
+        }
+
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body style="padding: 40px;"&gt;
+
+ 
+
+&lt;div style="display: flex"&gt;
+
+  	&lt;div style="padding-top: 20px;"&gt;
+
+		&lt;p class="left-corner" style="background-color: rgb(240,240,240);"&gt;&lt;span class="avis"&gt;AVIS&lt;/span&gt;
+
+  		&lt;span class="fleet-services"&gt;Fleet Services&lt;/span&gt;&lt;/p&gt;
+
+	&lt;/div&gt;
+
+ 
+
+    &lt;div style="margin-left: auto;"&gt;
+
+        &lt;p class="right-corner"&gt;AVIS | &lt;span style="font-size:13px; font-weight:normal;"&gt;iLEASE&lt;/span&gt;&lt;/p&gt;
+
+	&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;div class="underline"&gt;
+
+	&lt;h3&gt;&lt;u&gt;QUOTATION REQUEST FORM&lt;/u&gt; - &lt;u&gt;iLease&lt;/u&gt;&lt;/h3&gt;
+
+&lt;/div&gt;
+
+ 
+
+&lt;div&gt;
+
+    &lt;h3 class="iLease"&gt;Customer Name&lt;u class="underlined" style="margin-left:80px;"&gt;%Customer Name%&lt;/u&gt;&lt;/h3&gt;
+
+    &lt;h3 class="iLease"&gt;ID Number&lt;u class="underlined" style="margin-left:130px;"&gt;%ID Number%&lt;/u&gt;&lt;/h3&gt;
+
+    &lt;h3 class="iLease"&gt;Contact number&lt;u class="underlined" style="margin-left:80px;"&gt;%Contact number%&lt;/u&gt;&lt;/h3&gt;
+
+    &lt;h3 class="iLease"&gt;E-mail&lt;u class="underlined" style="margin-left:180px;"&gt;%E-mail%&lt;/u&gt;&lt;/h3&gt;
+
+&lt;/div&gt;
+
+
+&lt;div class="big-line"&gt;&lt;/div&gt;
+
+ 
+
+&lt;div class="compulsory-products"&gt;
+
+        Compulsory Value-Added Products
+
+&lt;/div&gt;
+
+ 
+
+&lt;div style="display: flex"&gt;
+
+    &lt;div&gt;
+
+        &lt;h4 class="underlined"&gt;AA Corporate&lt;span style="margin-left:40px;"&gt;%AA Corporate%&lt;/span&gt;&lt;/h4&gt;
+
+        &lt;h4 class="underlined"&gt;iLease Insurance&lt;span style="margin-left:20px;"&gt;%iLease Insurance%&lt;/span&gt;&lt;/h4&gt;
+
+        &lt;h4 class="underlined"&gt;License Renewal&lt;span style="margin-left:20px;"&gt;%License Renewal%&lt;/span&gt;&lt;/h4&gt;
+
+    &lt;/div&gt;
+
+    &lt;div&gt;
+
+        &lt;h4 class="underlined"&gt;Telematics&lt;span style="margin-left:205px;"&gt;%Telematics%&lt;/span&gt;&lt;/h4&gt;
+
+        &lt;h4 class="underlined"&gt;Driver management&lt;span style="margin-left:150px;"&gt;%Driver management%&lt;/span&gt;&lt;/h4&gt;
+
+        &lt;h4 class="underlined"&gt;Traffic Fines Management per infringement&lt;span style="margin-left:5px;"&gt;%Traffic Fines%&lt;/span&gt;&lt;/h4&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+ 
+
+&lt;div class="big-line"&gt;&lt;/div&gt;
+
+ 
+
+&lt;div class="vehicle-details"&gt;
+
+        Vehicle Details (2 selections per quote request)
+
+&lt;/div&gt;
+
+ 
+
+&lt;div style="display: flex"&gt;
+
+	&lt;div&gt;
+
+    	&lt;h4 class="quote-details"&gt;Avis Quote #&lt;br&gt; (office use)&gt;&lt;u class="vehicleUnderline"&gt;%office use%&lt;/u&gt;&lt;/h4&gt;
+
+        &lt;h4 class="mm-code-label"&gt;*M &amp; M Code&lt;u class="vehicleUnderline"&gt;%*M &amp; M Code%&lt;/u&gt;&lt;/h4&gt;
+
+        &lt;h4 class="mm-code-label"&gt;Vehicle Make / Range: &lt;u class="vehicleUnderline"&gt;%Vehicle Make%&lt;/u&gt;&lt;/h4&gt;
+
+        &lt;h4 class="mm-code-label"&gt;Model: &lt;u class="vehicleUnderline"&gt;%Model%&lt;/u&gt;&lt;/h4&gt;
+
+        &lt;h4 class="mm-code-label"&gt;Optional Accessories &lt;u class="vehicleUnderline"&gt;%Optional Accessories%&lt;/u&gt;&lt;/h4&gt;
+
+        &lt;h4 class="mm-code-label"&gt;AverageMonthlyKilometers required &lt;u class="vehicleUnderline"&gt;%AvgMonthlyKm%&lt;/u&gt;&lt;/h4&gt;
+
+    &lt;/div&gt;
+
+    &lt;div style="margin-left: auto;"&gt;
+
+    	&lt;h4 class="quote-details"&gt;Avis Quote #&lt;br&gt; (office use)&gt;&lt;u class="vehicleUnderline"&gt;%office use%&lt;/u&gt;&lt;/h4&gt;
+
+        &lt;h4 class="mm-code-label"&gt;*M &amp; M Code&lt;u class="vehicleUnderline"&gt;%*M &amp; M Code%&lt;/u&gt;&lt;/h4&gt;
+
+        &lt;h4 class="mm-code-label"&gt;Vehicle Make / Range: &lt;u class="vehicleUnderline"&gt;%Vehicle Make%&lt;/u&gt;&lt;/h4&gt;
+
+        &lt;h4 class="mm-code-label"&gt;Model: &lt;u class="vehicleUnderline"&gt;%Model%&lt;/u&gt;&lt;/h4&gt;
+
+        &lt;h4 class="mm-code-label"&gt;Optional Accessories &lt;u class="vehicleUnderline"&gt;%Optional Accessories%&lt;/u&gt;&lt;/h4&gt;
+
+        &lt;h4 class="mm-code-label"&gt;Preferred contract period &lt;u class="vehicleUnderline"&gt;%contractperiod%&lt;/u&gt;&lt;/h4&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+ 
+
+ 
+
+&lt;div&gt;
+
+	&lt;h4 class="mm-code-label"&gt;Required Delivery Date &amp;Area &lt;u class="vehicleUnderline"&gt;%RequiredDeliveryDate%&lt;/u&gt;&lt;/h4&gt;
+
+    &lt;h4 class="mm-code-label"&gt;Special Request &lt;u class="vehicleUnderline"&gt;%SpecialRequest%&lt;/u&gt;&lt;/h4&gt;
+
+&lt;/div&gt;
+
+ 
+
+&lt;div class="big-line"&gt;&lt;/div&gt;
+
+ 
+
+&lt;div&gt;
+
+	&lt;h4 class="mm-code-label"&gt;Comments&lt;u class="vehicleUnderline"&gt;%Comments%&lt;/u&gt;&lt;/h4&gt;
+
+&lt;/div&gt;
+
+ 
+
+&lt;div class="big-line"&gt;&lt;/div&gt;
+
+ 
+
+&lt;div style="display: flex"&gt;
+
+	&lt;div&gt;
+
+  		&lt;h4 class="mm-code-label" style="margin-left: 50px;"&gt;DATE &lt;u class="vehicleUnderline"&gt;%Date%&lt;/u&gt;&lt;/h4&gt;
+
+    &lt;/div&gt;
+
+    &lt;div style="margin-left: 50px;;"&gt;
+
+  		&lt;h4 class="mm-code-label"&gt;TIME &lt;u class="vehicleUnderline"&gt;%time%&lt;/u&gt;&lt;/h4&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+ 
+
+&lt;div&gt;
+
+&lt;span style="margin-top: 20px;"&gt;* M &amp; M Code = Mead &amp; McGrouther Code (applicable to customers who source their own vehicle)&lt;/span&gt;
+
+&lt;/div&gt;
+
+ 
+
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">string</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<INVOKE TIMEOUT="" SERVICE="pub.flow:setResponse2" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">setResponse2Input</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">responseString</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">responseBytes</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">responseStream</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">responseStreamTransferEncoding</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>chunked</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">contentType</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>text/xml</value>
+          <value>text/html</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">encoding</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">selectBollywoodInput</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">SERIAL_NO</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">selectBollywoodOutput</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">string</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/string;1;0" TO="/responseString;1;0">
+</MAPCOPY>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/contentType;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">text/html</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">field</value>
+    <value name="node_subtype">unknown</value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <value name="field_usereditable">true</value>
+    </record>
+    <value name="is_public">false</value>
+    <value name="field_name">contentType</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="field_opt">true</value>
+    <array name="field_options" type="value" depth="1">
+      <value>text/xml</value>
+      <value>text/html</value>
+    </array>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+</INVOKE>
+
+<INVOKE TIMEOUT="" SERVICE="Component:java" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="wrapper_type">IData</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">inputText</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">outputPath</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">responseString</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">selectBollywoodInput</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">SERIAL_NO</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">selectBollywoodOutput</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">contentType</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">string</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/responseString;1;0" TO="/inputText;1;0">
+</MAPCOPY>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/outputPath;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">C:/testingclone/mani.pdf</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="node_comment"></value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <value name="field_usereditable">true</value>
+      <value name="field_largerEditor">false</value>
+      <value name="field_password">false</value>
+    </record>
+    <value name="is_public">false</value>
+    <value name="field_name">outputPath</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <array name="field_options" type="value" depth="1">
+    </array>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+</INVOKE>
+</FLOW>

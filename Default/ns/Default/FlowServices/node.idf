@@ -6,4 +6,20 @@
   <value name="node_nsName">Default.FlowServices</value>
   <value name="node_pkg">Default</value>
   <value name="is_public">false</value>
+  <value name="encodeutf8">true</value>
+  <value name="shared"></value>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
+  </array>
+  <array name="imports" type="value" depth="1">
+    <value>org.apache.pdfbox.pdmodel.PDDocument</value>
+    <value>org.apache.pdfbox.pdmodel.PDPage</value>
+    <value>org.apache.pdfbox.pdmodel.common.PDRectangle</value>
+    <value>org.apache.pdfbox.rendering.PDFRenderer</value>
+    <value>org.apache.pdfbox.text.PDFTextStripper</value>
+    <value>java.awt.image.BufferedImage</value>
+    <value>java.io.File</value>
+    <value>java.io.IOException</value>
+    <value>java.util.List</value>
+  </array>
 </Values>
